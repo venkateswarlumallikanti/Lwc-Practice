@@ -1,0 +1,19 @@
+<template>
+	<lightning-input type="text" variant="standard" name="latitudeName" label="Latitude" placeholder="Enter latitude"
+		onchange={handleChange} value={latVar}></lightning-input>
+	<lightning-input type="text" variant="standard" name="longitudeName" label="Longitude" placeholder="Enter longitude"
+		onchange={handleChange} value={longVar}></lightning-input>
+	<lightning-button variant="brand" label="Find" title="Find" onclick={handleClick}></lightning-button>
+	<lightning-input type="text" variant="standard" name="name" label="Address" value={addressInstance}>
+	</lightning-input>
+	<template if:true={mapVisible}>
+		<lightning-map map-markers={mapMarkers} zoom-level="10" markers-title="Lunch Gems"
+			onmarkerselect={handleMarkerSelect} selected-marker-value={selectedMarkerValue}>
+		</lightning-map>
+	</template>
+	<img src={iconVar}><br>
+	<p>Temperature in C :</p><strong>{tempC} C</strong> <br>
+	<p>Temperature in F :</p><strong>{tempF} F</strong> <br>
+	<p>Forecast : </p><strong>{tempText}</strong> <br>
+	{windKph}
+</template>

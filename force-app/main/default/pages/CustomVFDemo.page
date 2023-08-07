@@ -1,0 +1,8 @@
+<apex:page controller="ApexHours">
+    <apex:pageBlock title="MyAccounts">
+        <apex:dataTable value="{!accList}" var="item">
+            <apex:column value="{!item.Id}"/>
+            <apex:column value="{!item.Name}"/>
+        </apex:dataTable>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,5 @@
+<apex:page standardController="Opportunity" >
+<apex:pageblock title="Opportunity Data" >
+<apex:detail relatedList="false"/>    
+</apex:pageblock>
+</apex:page>

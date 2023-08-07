@@ -1,0 +1,96 @@
+.THIS {
+    text-align: center;
+    position: absolute;
+	left: 0;
+    right: 0;
+    height: 100%;
+    font-weight: 300;
+}
+
+.THIS .location {
+    font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+.THIS .temperature {
+    font-size: 3.5rem;
+}
+
+.THIS .description {
+  	text-transform: uppercase;
+    margin: 0.5rem 0 0 0;
+}
+
+.THIS table {
+    font-size: 0.9rem;
+    margin: 1rem auto;
+}
+
+.THIS td {
+    padding: 0.3rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.THIS .right-align {
+    text-align: right;
+}
+
+.THIS .subtle {
+    color: #999999;
+}
+
+.THIS td img {
+    height: 1.6rem;
+    vertical-align: middle;
+}
+
+.THIS .logo {
+	margin-top: 0.5rem;
+    width: 120px;    
+}
+
+.THIS input[type=text] {
+	font-size: 1rem;
+    -webkit-appearance: none;
+	box-shadow: none;
+    padding: 6px;
+    margin: 4px;
+    border: 1px solid #DDDDDD;
+    border-radius: 2px;
+}
+
+.THIS button {
+    font-size: 1rem;
+    background: #EFEFEF;
+    border: solid 1px #DDDDDD;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.THIS button:focus {
+    outline:0;
+}
+
+.THIS button:active {
+	border: solid 1px #BBBBBB;
+}
+
+.THIS .search-bar {
+    padding-top: 12px;
+    padding-bottom: 4px;
+}
+
+.THIS .deg:not(:empty):after {
+    content: '°';
+}
+
+.THIS .message {
+    font-size: 1.3rem;
+    color: #555555;
+    padding-bottom: 3rem;
+}
+
+.THIS .message:empty {
+	display:none;
+}

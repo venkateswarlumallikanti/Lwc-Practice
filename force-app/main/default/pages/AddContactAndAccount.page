@@ -1,0 +1,12 @@
+<apex:page standardController="Contact" extensions="AddNewAccountAndContact">
+
+   <apex:form >
+       <apex:pageBlock title="Add New Account & Contact">
+            <apex:pageBlockSection columns="1">
+    			 <apex:inputField value="{!newCon.FirstName}"/>
+    			 <apex:inputField value="{!newCon.LastName}"/>
+     			 <apex:commandButton action="{!save}" value="Save" rerender="exampleClass"/>
+          	</apex:pageBlockSection>
+        </apex:pageBlock>    
+   </apex:form>
+</apex:page>

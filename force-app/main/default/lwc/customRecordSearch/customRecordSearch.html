@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Custom Account Secrh">
+        <lightning-layout multiple-rows="true" vertical-align="end">
+        <lightning-layout-item size="4" padding="around-small">
+            <lightning-input type="text" label="Enter Account Name To Search"
+                value={searchKey} onchange={handleSearch}>
+            </lightning-input>
+        </lightning-layout-item>
+
+        <lightning-layout-item size="2" padding="around-small">
+            <!-- Button Search -->
+            <lightning-button label="Search" variant="brand" onclick={searchAccountHandler}>
+            </lightning-button>
+        </lightning-layout-item>
+
+        <lightning-layout-item size="12" padding="around-small">
+            <!-- List Of Account using data table-->
+            <lightning-datatable key-field="id" data={accounts} columns={cols}>
+            </lightning-datatable>
+        </lightning-layout-item>
+    </lightning-layout>
+    </lightning-card>
+    
+</template>

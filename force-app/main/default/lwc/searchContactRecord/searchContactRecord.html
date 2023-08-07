@@ -1,0 +1,27 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card title="Contact Search">
+        <lightning-layout multiple-rows="true" vertical-align="end">
+            <lightning-layout-item size="4" padding="around-small">
+                <lightning-input type="text" label="Enter Contact Name To Search "
+                    value={searchKey} onchange={handleSearch}>
+                </lightning-input>
+            </lightning-layout-item>
+
+            <!-- BUtton Search -->
+            <lightning-layout-item size="2" padding="around-medium">
+                <lightning-button label="Search" veriant="brand" onclick={searchContactHandler}>
+                </lightning-button>
+            </lightning-layout-item>
+
+            <!-- List of Contact using dat table -->
+            <lightning-layout-item size="12" padding="around-small">
+                <!-- sldsValidatorIgnoreNextLine -->
+                <lightning-datatable key-field="id" data={contacts} columns={cols}>
+                </lightning-datatable>
+            </lightning-layout-item>
+
+        </lightning-layout>
+    </lightning-card>
+    
+</template>
